@@ -16,6 +16,7 @@ app.use(cors({
 app.use('/content', require('./routes/content.routes'));
 app.use('/upload', require('./routes/upload.routes'));
 app.use('/mkdir', require('./routes/mkdir.routes'));
+app.use('/download', require('./routes/download.routes'));
 
 app.listen(app.get('port'), () => {
     console.log('Server is running on port ' + app.get('port'));
